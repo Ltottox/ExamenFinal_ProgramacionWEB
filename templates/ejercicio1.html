@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 </title>
+    <link rel="stylesheet" href="/static/css/styleEj1.css">
+</head>
+<body>  
+    <!-- CONTENEDOR principal para centrar el contenido -->
+    <div class="container">
+        <!-- TÍTULO visible del ejercicio -->
+        <h1>Calculo de compras</h1>
+        <form method="POST" class="form-box">
+            <!-- Cada campo está en un form-group para estilos -->
+             <!--El formulario se debe completar con un nombre, una edad y una cantidad de tarros de pinturas a comprar. -->
+            <div class="form-group"> 
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>      
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="0" required>
+            </div>
+            <div class="form-group">    
+                <label for="cantidad">ingresa la cantidad de tarros de pintura a comprar:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+            </div>
+                <!-- BOTÓN de envío -->
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+    {% if resultado %}  
+</body>
+</html>
