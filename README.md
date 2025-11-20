@@ -7,8 +7,7 @@ Según la edad, se aplica el siguiente descuento:
 Menores de 18 años: sin descuento, Entre 18 y 30 años (incluidos): 15% de descuento y Mayores de 30 años: 25% de descuento
 
 Al enviar el formulario, la página debe mostrar:
-Nombre del cliente, Total sin descuento,
-(cantidad de tarros × 9000) y
+Nombre del cliente, Total sin descuento (cantidad de tarros × 9000) y
 Total a pagar
 
 En caso que el cliente cumpla con los requistos de descuento, se aplicara
