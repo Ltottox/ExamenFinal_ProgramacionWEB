@@ -1,19 +1,14 @@
 El ejercicio 1 es un formulario que debe solicitar tres datos:
-Nombre de la persona
-Edad
-Cantidad de tarros de pintura
+Nombre de la persona, Edad y Cantidad de tarros de pintura.
 
 Cada tarro cuesta $9000.
 
 Según la edad, se aplica el siguiente descuento:
-Menores de 18 años: sin descuento
-Entre 18 y 30 años (incluidos): 15% de descuento
-Mayores de 30 años: 25% de descuento
+Menores de 18 años: sin descuento, Entre 18 y 30 años (incluidos): 15% de descuento y Mayores de 30 años: 25% de descuento
 
 Al enviar el formulario, la página debe mostrar:
-Nombre del cliente
-Total sin descuento
-(cantidad de tarros × 9000)
+Nombre del cliente, Total sin descuento,
+(cantidad de tarros × 9000) y
 Total a pagar
 
 En caso que el cliente cumpla con los requistos de descuento, se aplicara
