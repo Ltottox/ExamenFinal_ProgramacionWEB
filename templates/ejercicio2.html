@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 </title>
+    <link rel="stylesheet" href="/static/css/styleEj2.css">
+</head> 
+<body>  
+    <!-- CONTENEDOR principal para centrar el contenido -->
+    <div class="container">
+        <!-- TÍTULO visible del ejercicio -->
+        <h1>Inicio de sesión</h1>
+        <form method="POST" class="form-box" > 
+            <!-- Cada campo está en un form-group para estilos -->
+             <!--El formulario se debe completar con un nombre de usuario y una contraseña. -->
+            <div class="form-group"> 
+                <label for="username">Ingresa tu Nombre</label>
+                <input type="text" id="username" name="username" required>      
+            </div>
+            <div class="form-group">
+                <label for="password">Ingresa tu Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+                <!-- BOTÓN de envío -->
+            <button type="submit" class="btn btn-primary">verificar</button>
+                <!-- BOTÓN para volver a la página principal -->
+              <a href="/" class="btn btn-secondary">Volver</a>
+             {% if mensaje %}
+                <div class="msn">
+                    <p>{{ mensaje }}</p>
+                </div>
+             {% endif %}              
+         </form>         
+    </div>
+</body>
+</html>
+ 

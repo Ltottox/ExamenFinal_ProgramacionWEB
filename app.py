@@ -44,10 +44,33 @@ def ejercicio1():
     return render_template('ejercicio1.html')
 
     
+#La página cuenta con dos usuarios previamente registrados. El primer usuario se llama “juan” y su contraseña es “admin”. El segundo usuario se llama “pepe” y su contraseña es “user”.
+
+#Cuando se coloca el usuario “juan” con su contraseña y estas son correctas, se muestra un mensaje que dice: “Bienvenido administrador juan”
+
+#Cuando se coloca el usuario “pepe” con su contraseña y estas son correctas, se muestra un mensaje que dice: “Bienvenido usuario pepe”
 
 @app.route('/ejercicio2', methods=['GET', 'POST'])
 def ejercicio2():
+    mensaje = None
+    
+    if request.method == 'POST':
+        nombre = request.form.get("username")
+        contraseña = request.form.get("password")
+        
+        if nombre == "juan" and contraseña == "admin":
+            mensaje = "Bienvenido administrador Juan."
+            
+        elif nombre == "pepe" and contraseña == "user":
+            mensaje = "Bienvenido usuario Pepe."
+            
+        else:
+            mensaje = "usuario o contraseña incorrectas."
+            
+        return render_template('ejercicio2.html', mensaje=mensaje)
+    
     return render_template('ejercicio2.html')
+
 
 if __name__ == '__main__':
     app.run()
